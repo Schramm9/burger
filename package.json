@@ -1,0 +1,30 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Persistent data application to catalog hamburgers the user might eat",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schramm9/burger.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Handlebars",
+    "MySQL"
+  ],
+  "author": "Schramm9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Schramm9/burger/issues"
+  },
+  "homepage": "https://github.com/Schramm9/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
