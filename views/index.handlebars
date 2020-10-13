@@ -24,16 +24,15 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Tell me your burger's name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="ca">What is your burger's name:</label>
+    <input type="text" id="ca" burger_name="burger_name">
   </div>
 
   <div class="form-group">
     <label for="delicious">Delicious?</label><br>
-    <input type="radio" name="delicious" value="1" checked> Delicious!<br>
-    <input type="radio" name="not_delicious" value="0"> Not Delicious...  
+    <input type="radio" burger_name="delicious" value="1" checked> Delicious!<br>
+    <input type="radio" burger_name="not_delicious" value="0"> Not Delicious...  
   </div> 
-  {{!-- possible hang-up --}}
 
   <button type="submit">Add a burger</button>
 </form>

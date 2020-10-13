@@ -1,3 +1,4 @@
+// Front end
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
   $(".change-delicious").on("click", function (event) {
@@ -24,8 +25,8 @@ $(function () {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#ca").val().trim(),
-      delicious: $("[name=delicious]:checked").val().trim(),
+      burger_name: $("#ca").val().trim(),
+      delicious: $("[burger_name=delicious]:checked").val().trim(),
     };
 
     // Send the POST request.
