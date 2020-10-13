@@ -1,3 +1,4 @@
+// name check
 // Import MySQL connection.
 var connection = require("./connection.js");
 
@@ -29,8 +30,8 @@ function objToSql(ob) {
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
       }
-      // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
+      // e.g. {name: 'Enough Burger'} => ["name='Enough Burger'"]
+      // e.g. {delicious: true} => ["delicious=true"]
       arr.push(key + "=" + value);
     }
   }
@@ -103,5 +104,21 @@ var orm = {
   },
 };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model (burger.js).
 module.exports = orm;
+
+// * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+
+// * Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
+
+// * Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
+
+// * Your app will store every burger in a database, whether devoured or not.
+
+// * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
+
+//      * `selectAll()`
+//      * `insertOne()`
+//      * `updateOne()`
+
+//    * Export the ORM object in `module.exports`.

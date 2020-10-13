@@ -2,7 +2,7 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "Persistent data application to catalog hamburgers the user might eat",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "test"
   },
