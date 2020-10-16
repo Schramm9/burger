@@ -15,7 +15,7 @@
 <ul>
   {{#each burgers}}
     {{#if delicious}}
-      {{> burgers/burger-block delicious=false}}
+      {{> burgers/burger-block delicious=false}} {{!-- watch out --}}
     {{/if}}
   {{/each}}
 </ul>
@@ -32,7 +32,7 @@
     <label for="delicious">Delicious?</label><br>
     <input type="radio" burger_name="delicious" value="1" checked> Delicious!<br>
     <input type="radio" burger_name="not_delicious" value="0"> Not Delicious...  
-  </div> 
+  </div>
 
   <button type="submit">Add a burger</button>
 </form>

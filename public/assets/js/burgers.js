@@ -11,6 +11,7 @@ $(function () {
 
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
+      // DEVOUR IT! not found basically
       type: "PUT",
       data: newDeliciousState,
     }).then(function () {
@@ -41,6 +42,7 @@ $(function () {
   });
 
   $(".delete-burger").on("click", function (event) {
+    // DELETE button seems to work whether burger has been devoured or not
     var id = $(this).data("id");
 
     // Send the DELETE request.

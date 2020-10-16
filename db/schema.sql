@@ -4,8 +4,8 @@ USE burgers_db;
 CREATE TABLE burgers(
 id int auto_increment primary key,
 burger_name VARCHAR (30) not null,
-delicious BOOLEAN 
-);
+delicious BOOLEAN, 
+devoured BOOLEAN);
 
 --    - Create the `burgers_db`.
 --    - Switch to or use the `burgers_db`.
