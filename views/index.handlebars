@@ -1,26 +1,6 @@
     <h1>Burgers!</h1>
 
-<h2>Burgers you may like to try...</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless not_delicious}}
-      {{> burgers/burger-block not_delicious=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers that were delicious!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if delicious}}
-      {{> burgers/burger-block delicious=false}} {{!-- watch out --}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger!</h2>
+    <h2>Add a Burger!</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -30,15 +10,33 @@
 
   <div class="form-group">
     <label for="delicious">Delicious?</label><br>
-    <input type="radio" burger_name="delicious" value="1" checked> Delicious!<br>
-    <input type="radio" burger_name="not_delicious" value="0"> Not Delicious...  
+    <input type="radio" name="delicious" value="1" checked> Delicious!<br>
+    <input type="radio" name="delicious" value="0" > Not Delicious...  
   </div>
 
   <button type="submit">Add a burger</button>
 </form>
 
-    
-       {{!-- * Create the `index.handlebars` file inside `views` directory.
+<h2>Burgers you may like to try...</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>             
+
+<h2>Burgers that were delicious!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=false}} {{!-- watch out --}}
+    {{/if}}
+  {{/each}}
+</ul>
+  {{!-- * Create the `index.handlebars` file inside `views` directory.
 
    * Create the `layouts` directory inside `views` directory.
 
