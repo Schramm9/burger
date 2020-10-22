@@ -4,7 +4,8 @@
   "description": "Persistent data application to catalog hamburgers the user might eat",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon"
   },
   "repository": {
     "type": "git",
